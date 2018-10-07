@@ -1,0 +1,55 @@
+.photo {
+	width: 196px;
+	height: 196px;
+	border-radius: 100px;
+	border: 1px solid #ddd;
+}
+
+.row .profile {
+	display: inline-block;
+	margin: 20px;
+}
+
+.profile {
+	position: relative;
+}
+
+.icon {
+	background: url("images/sprite.png") no-repeat;
+	background-color: white;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	float: left;
+	border-radius: 100px;
+	border: 1px solid #bbb;
+}
+
+.icon:hover {
+	background-color: #995fa3;
+}
+
+.icon.fb {
+  cursor: pointer;
+  left: -25px;
+  top: 85px;
+  background-position: 0px 0px;
+}
+.icon.tw {
+  cursor: pointer;
+  left: -17px;
+  top: 45px;
+  background-position: 0px -32px;
+}
+.icon.msg {
+  cursor: pointer;
+  left: 80px;
+  top: 180px;
+  background-position: -32px 0px;
+}
+.icon.vk {
+  cursor: pointer;
+  left: 5px;
+  top: 10px;
+  background-position: -32px -32px;
+}
