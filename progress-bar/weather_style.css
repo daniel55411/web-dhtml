@@ -1,0 +1,14 @@
+body div {
+	border: 20px solid #97CC8E;
+	border-right: 20px solid #D0E5BD;
+	background-color: #ECF5E5;
+	border-radius: 90px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display: flex;
+}
+
+body div span {
+	margin: auto;
+}
