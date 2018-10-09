@@ -1,0 +1,16 @@
+.nav {
+	float: left;
+	width: 120px;
+	background: green;
+}
+
+.content {
+	width: 100%;
+	background: grey;
+}
+
+.ads {
+	float: right;
+	width: 120px;
+	background: red;
+}
