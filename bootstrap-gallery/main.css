@@ -1,0 +1,15 @@
+body {
+	background: url('images/background.png') no-repeat;
+}
+
+.thumbnail {
+	transition: all 0.3s ease;
+	z-index: 1;
+}
+
+.thumbnail:hover {
+	z-index: 2;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
