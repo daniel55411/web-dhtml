@@ -1,16 +1,24 @@
+body > div {
+	height: 500px;
+}
+
 .nav {
 	float: left;
 	width: 120px;
 	background: green;
+	height: 100%;
 }
 
 .content {
-	width: 100%;
 	background: grey;
+	width: calc(100% - 240px);
+	display: inline-block;
+	height: 100%;
 }
 
 .ads {
 	float: right;
 	width: 120px;
 	background: red;
+	height: 100%;
 }
