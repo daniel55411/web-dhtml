@@ -17,6 +17,10 @@ ul {
   text-align: left;
 }
 
+li {
+  float: left;
+}
+
 
 .nav {
   position: relative;
@@ -69,6 +73,10 @@ ul.menu li:hover > a{
 } 
 
 @media only screen and (max-width: 800px) {
+  li {
+	float: none;
+  }	  
+	
   .nav .menu {
 	display: none;
   }
