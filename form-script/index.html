@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+	.wrong {
+		box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+	}
+	
+	input {
+		margin: 5px;
+	}
+  </style>
+</head>
+
+<body>
+
+  <form id="id-form">
+	<input id="id-form-name" type="text" placeholder="name" name="name"><br>
+	<input id="id-form-phone" type="text" placeholder="phone" name="phone"><br>
+	<input id="id-form-index" type="text" placeholder="index" name="index"><br>
+	<input type="submit" value="Login">
+  </form>
+
+</body>
+<script>
+	let pattern = {
+		'phone': /^(8|(\+7))\d{10}$/,
+		'name': /^([a-z]{3,}|[а-я]{3,})$/i,
+		'index': /^\d{6}$/
+	};
+	
+	let submitted = [
+		document.getElementById('id-form-name'),
+		document.getElementById('id-form-phone'),
+		document.getElementById('id-form-index')
+	]
+	
+	let form = document.getElementById('id-form');
+	form.onsubmit = function() {
+		submitted.forEach(function(input) {
+			if (pattern[input.name].test(input.value)) {
+				input.classList.remove('wrong');
+			} else {
+				input.classList.add('wrong');
+			}
+		});
+		
+		return false;
+	};
+</script>
+</html>
